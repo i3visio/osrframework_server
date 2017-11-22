@@ -342,7 +342,7 @@ def runQuery(program, args=[]):
     Function that wraps the queries
 
     It automatically launches the corresponding application function. The
-    is_entry_point flag is set as False to receive something as parameter.
+    parameters are built as if they were submitted using the command line.
 
     Args:
     -----
@@ -356,17 +356,17 @@ def runQuery(program, args=[]):
     print args
     # Selecting the appropriate program
     if program == "domainfy":
-        answer = domainfy.main(args, is_entry_point=False)
+        answer = domainfy.main(args)
     elif program == "entify":
-        answer = entify.main(args, is_entry_point=False)
+        answer = entify.main(args)
     elif program == "mailfy":
-        answer = mailfy.main(args, is_entry_point=False)
+        answer = mailfy.main(args)
     elif program == "phonefy":
-        answer = phonefy.main(args, is_entry_point=False)
+        answer = phonefy.main(args)
     elif program == "searchfy":
-        answer = searchfy.main(args, is_entry_point=False)
+        answer = searchfy.main(args)
     elif program == "usufy":
-        answer = usufy.main(args, is_entry_point=False)
+        answer = usufy.main(args)
 
     # Returning the output
     return answer
