@@ -60,6 +60,12 @@ latest version of the server version.
 4 - Basic configuration
 -----------------------
 
+The server is easy to launch:
+```
+osrframework_server
+```
+It will start a local server in port 30230 if you have not changed it. You will
+be able to use the WebUI by accessing <http://localhost:30230>.
 
 5 - HACKING
 -----------
